@@ -1,0 +1,82 @@
+name: elf_note
+description: elf_note
+
+# 以下行防止包被意外发布到
+# pub.dev 使用 `flutter pub publish`。这是私有包的首选。
+publish_to: 'none' # 如果您希望发布到 pub.dev，请删除此行
+
+# 下面定义了您的应用程序的版本和内部版本号。
+# 版本号是由点分隔的三个数字，如 1.2.43
+# 后跟一个可选的内部版本号，用 + 分隔。
+# 版本号和建造者号都可能在flutter中被覆盖
+# 通过分别指定 --build-name 和 --build-number 来构建。
+# 在 Android 中，build-name 用作 versionName，而 build-number 用作 versionCode。
+# 在 https://developer.android.com/studio/publish/versioning 阅读有关 Android 版本控制的更多信息
+# 在 iOS 中，build-name 用作 CFBundleShortVersionString，而 build-number 用作 CFBundleVersion。
+# 阅读有关 iOS 版本控制的更多信息，请访问
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+# Dependencies 指定你的包需要的其他包才能工作。
+# 自动升级你的包依赖到最新版本
+# 考虑运行 `flutter pub upgrade --major-versions`。或者，
+# 可以通过将下面的版本号更改为手动更新依赖项
+# pub.dev 上提供的最新版本。查看哪些依赖项更新
+# 可用的版本，运行 `flutter pub outdated`。
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+
+  # 下面将 Cupertino Icons 字体添加到您的应用程序中。
+  # 与 CupertinoIcons 类一起用于 iOS 样式图标。
+  cupertino_icons: ^1.0.2
+  path_provider: ^2.0.11
+  flutter_markdown: ^0.6.10+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 下面的“flutter_lints”包包含一组推荐的 lints
+  # 鼓励良好的编码实践。包提供的 lint 集是
+  # 在位于根目录的 `analysis_options.yaml` 文件中激活
+  # 包裹。有关停用特定 lint 的信息，请参阅该文件
+  # 规则并激活其他规则。
+  flutter_lints: ^1.0.0
+
+# 有关此文件的通用 Dart 部分的信息，请参阅
+# 以下页面：https://dart.dev/tools/pub/pubspec
+
+# 以下部分是针对 Flutter 的。
+flutter:
+  generate: true
+  # 以下行确保 Material Icons 字体是
+  # 包含在您的应用程序中，以便您可以使用
+  # 材质图标类。
+  uses-material-design: true
+
+  assets:
+    - images/OIP.jpeg
+    - images/0159ed59dc905ba80120446384fcc1.jpg@2o.jpg
+    - images/OIP (2).jpeg
+    - images/OIP (3).jpeg
+    - images/9886d573c878468e940c288f2084f0d7.jpeg
+
+#  fonts:
+#    - family: Schyler
+#      fonts:
+#        - asset: fonts/Schyler-Regular.ttf
+#        - asset: fonts/Schyler-Italic.ttf
+#          style: italic
+#    - family: Trajan Pro
+#      fonts:
+#        - asset: fonts/TrajanPro.ttf
+#        - asset: fonts/TrajanPro_Bold.ttf
+#          weight: 700
