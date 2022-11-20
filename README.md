@@ -6,4 +6,4 @@ elf_note
 
 该应用使用flutter制作
 flutter version=3.3.8
-java version=8
+java version=8 
